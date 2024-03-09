@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="url"] {
+      width: calc(100% - 10px);
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #357AE8;
+    }
+
+    button:active {
+      background-color: #2A56C6;
+    }
+
+    #result {
+      margin-top: 10px;
+    }
+
+    #result a {
+      color: #4285F4;
+      text-decoration: none;
+    }
+
+    #result a:hover {
+      text-decoration: underline;
+    }
+
+    #error {
+      color: #FF0000;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <label for="urlInput">Enter URL:</label>
+  <input type="url" id="urlInput" placeholder="Enter URL">
+  <button id="shortenButton">Shorten</button>
+  <div id="result"></div>
+  <div id="error"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
